@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Javascript Ru - exercise I.6.8.1-2</title>
+    </head>
+    <body>
+        <p id="answer"></p>
+        <script>
+            function printNumbers(from, to) {
+                let cur = from;
+                let id = setTimeout(function func() {
+                    if (cur > to) {
+                        clearTimeout(id);
+                        return;
+                    }
+                    alert(cur++);
+                    id = setTimeout(func, 5000);
+                }, 5000);
+            }
+
+            printNumbers(1, 3);
+        </script>
+    </body>
+</html>

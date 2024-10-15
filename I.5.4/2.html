@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Javascript Ru - exercise I.5.4.2</title>
+    </head>
+    <body>
+        <p id="answer"></p>
+        <script>
+            let styles = ['Джаз', 'Блюз'];
+            styles.push('Рок-н-ролл');
+            styles[Math.floor(styles.length / 2)] = 'Классика';
+            alert(styles.shift());
+            styles.unshift('Рэп', 'Рэгги');
+        </script>
+    </body>
+</html>

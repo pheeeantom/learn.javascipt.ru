@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Javascript Ru - exercise I.6.3.6</title>
+    </head>
+    <body>
+        <p id="answer"></p>
+        <script>
+            console.log(sum(1)(2));
+            console.log(sum(5)(-1));
+
+            function sum(a) {
+                let s = a;
+
+                return function(b) {
+                    return s + b;
+                }
+            }
+        </script>
+    </body>
+</html>

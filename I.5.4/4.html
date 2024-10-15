@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Javascript Ru - exercise I.5.4.4</title>
+    </head>
+    <body>
+        <p id="answer"></p>
+        <script>
+            let arr = [];
+            let cur = prompt('Enter a value...');
+            while (isFinite(cur) && cur !== null && cur !== '') {
+                arr.push(+cur);
+                cur = prompt('Enter a value...');
+            }
+            let sum = 0;
+            for (let num of arr) {
+                sum += num;
+            }
+            alert(sum);
+        </script>
+    </body>
+</html>
